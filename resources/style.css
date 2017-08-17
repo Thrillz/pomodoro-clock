@@ -1,0 +1,196 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Amita", "Imprima", 'Aldrich', "Orbitron",  sans-serif;
+  margin: 0;
+  background-color: #818181;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('http://imageshack.com/a/img905/2204/RaTH57.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.wrapper .clockTitle {
+  text-align: center;
+}
+
+.pomodoro {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  background-color: #D3D3D3;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+}
+
+.pomodoro .topButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topButtons .brk {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topButtons .ses {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 18px;
+  margin: 0 5px;
+  font-family: "Orbitron", sans-serif;
+}
+
+
+.topButtons .btns {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.displayBtn > .green {
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 2px #808080;
+  background-color: #5cb85c;
+}
+
+.displayBtn > .orange {
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 2px #808080;
+  background-color: #d9534f;
+}
+
+button,
+button:hover,
+button:active,
+button:visited {
+  text-decoration: none !important;
+  outline: none !important;
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+button:active {
+  transform: translate(0px, 3px);
+  box-shadow: none;
+}
+
+.disp {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.disp .displayBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.displaySrc {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3em;
+  border: 5px solid #b4b39d;
+  border-radius: 6px;
+  background-color: #c3c2ab;
+}
+
+.ttype {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.footnote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Imprima", sans-serif;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media all and (max-width:500px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topButtons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

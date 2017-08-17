@@ -1,0 +1,79 @@
+<DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pomodoro-clock.io</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="resources/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="resources/app.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="pomodoro">
+
+        <!-- app header -->
+        <div class="clockTitle">
+          <h1>FREECODECAMP</h1>
+          <h3>Pomodoro Clock</h3>
+        </div>
+        <audio id="buzzer" src="resources/sound/Wrong-answer-sound-effect.mp3" type="audio/mpeg"></audio>
+
+        <div class="topButtons">
+          <!-- break button -->
+          <div class="brk" id="break">
+            <h4 class="tts" id="title1">Break Time</h4>
+            <div class="btns" id="brkBtn">
+              <button class="min" value="-" id="minfivbrk">-</button>
+              <h5 class="txted" id="breaknum">5</h5>
+              <button class="addb" value="+" id="addfivbrk">+</button>
+            </div>
+          </div>
+
+          <!-- session time button -->
+          <div class="ses" id="session">
+            <h4 class="tts" id="title1">Session Time</h4>
+            <div class="btns" id="sesBtn">
+              <button class="min" value="-" id="minusfive">-</button>
+              <h5 class="txted" id="num">25</h5>
+              <button class="addb" value="+" id="addfive">+</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="disp">
+
+          <!-- start and reset buttons -->
+          <div class="displayBtn">
+            <button class="green" value="strt" id="start">Start</button>
+            <button class="orange" value="rst" id="reset">Reset</button>
+          </div>
+
+          <!-- display screen -->
+          <div class="displaySrc" id="screen">
+            <div class="ttype" id="timeType"></div>
+            <p id="dscreen">00:00</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <footer class="footnote">
+      <div class="contain">
+        Designed by <a href="https://twitter.com/kingthrillz" target="_blank" class="afoot">👾 Dad Vader</a>
+      </div>
+    </footer>
+
+  </body>
+  </html>
+</DOCTYPE>
